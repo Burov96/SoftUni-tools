@@ -1,0 +1,23 @@
+.App2 {
+  text-align: center;align-items:center;justify-content: center;margin: 10%; box-sizing:content-box;font-size: large;
+}
+.Apple {
+  text-align: center;align-items:center;justify-content: center;margin: 10%; box-sizing:content-box;font-size: large;
+}
+.AppT {
+  color:aqua; text-align: center; vertical-align:bottom;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+input[type=text]{
+  width: 90%;
+}
