@@ -3,7 +3,7 @@ function nameFormat (input) {
     innput = input
     let num = innput.toString().substring(0, 4)
     let name = innput.toString().substring(4).replace(/\s/g, '')
-    let fullname = `${num}${name}.js`
+    let fullname = `${name}.js`
     return (fullname)
 }
 export default nameFormat
