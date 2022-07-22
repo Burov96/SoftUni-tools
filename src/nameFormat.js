@@ -1,9 +1,9 @@
 function nameFormat (input) {
     let innput = "";
     innput = input
-    let num = innput.toString().substring(0, 4)
-    let name = innput.toString().substring(4).replace(/\s/g, '')
-    let fullname = `${name}.js`
+    let purva = innput.toString().substring(4, 5).toLowerCase()
+    let name = innput.toString().substring(5).replace(/\s/g, '')
+    let fullname = `${purva}${name}.js`
     return (fullname)
 }
 export default nameFormat
