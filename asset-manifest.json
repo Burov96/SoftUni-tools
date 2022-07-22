@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/SoftUni-tools/static/css/main.0526e05f.css",
-    "main.js": "/SoftUni-tools/static/js/main.aebc323b.js",
+    "main.css": "/SoftUni-tools/static/css/main.60639fa0.css",
+    "main.js": "/SoftUni-tools/static/js/main.76c5bff6.js",
     "static/js/787.b701888c.chunk.js": "/SoftUni-tools/static/js/787.b701888c.chunk.js",
+    "static/media/giphy.gif": "/SoftUni-tools/static/media/giphy.aa35f686d9d32f1c9897.gif",
     "index.html": "/SoftUni-tools/index.html",
-    "main.0526e05f.css.map": "/SoftUni-tools/static/css/main.0526e05f.css.map",
-    "main.aebc323b.js.map": "/SoftUni-tools/static/js/main.aebc323b.js.map",
+    "main.60639fa0.css.map": "/SoftUni-tools/static/css/main.60639fa0.css.map",
+    "main.76c5bff6.js.map": "/SoftUni-tools/static/js/main.76c5bff6.js.map",
     "787.b701888c.chunk.js.map": "/SoftUni-tools/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0526e05f.css",
-    "static/js/main.aebc323b.js"
+    "static/css/main.60639fa0.css",
+    "static/js/main.76c5bff6.js"
   ]
 }
