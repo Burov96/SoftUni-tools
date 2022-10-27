@@ -1,6 +1,6 @@
 import "./App.css";
 import { useRef } from "react";
-import spaceRemover from "./spaceRemover";
+import spaceRemover from "../src/spaceRemover";
 
 export function App2() {
   const spaceR = useRef();

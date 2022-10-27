@@ -4,40 +4,20 @@ import spaceRemover from "../spaceRemover";
 import nameFormat from "../nameFormat";
 import { motion } from "framer-motion";
 import background from "../giphy.gif"
-
-export const bodyApp = () => {
-  return (
-    <div style={{ backgroundImage: `url(${background})` }}>
-      Hello World
-    </div>
-  );
-}
-
-export const App2 = () => {
-  const spaceR = useRef();
-  const submit2 = (e) => {
-    e.preventDefault();
-    const SpaceRem = spaceRemover(spaceR.current.value);
-    alert(SpaceRem)
-  }
-  return (
-    <form className="App2" onSubmit={submit2}>
-      <input ref={spaceR} type="text" placeholder="Space remover" /> <br></br>
-      <br></br><br></br>
-      <motion.button 
-      whileHover={{ scale: 1.17, duration:1}}
-      whileTap={{ scale: 0.6,duration:0.4 }}
-      class="button">Submit</motion.button>
-    </form>
-  );
-}
-
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import React, {useState} from "react";
+let nameForm=""
 export const Apple = () => {
+  const [value, setValue] = React.useState('Cukni butona otnovo\nmamka mu');
+  const [copied, setCopied] = React.useState(false);
+  const onCopy = React.useCallback(() => {
+    setCopied(true);
+  }, [])
   const nameF = useRef();
   const submit1 = (e) => {
     e.preventDefault();
-    const nameForm = nameFormat(nameF.current.value); 
-    alert(nameForm)
+    nameForm = nameFormat(nameF.current.value); 
+    onCopy();
   };
   return (
     <form className="Apple" onSubmit={submit1}>
@@ -45,14 +25,21 @@ export const Apple = () => {
       <br></br>
       <br></br>
       <br></br>
-      <motion.button 
+           <center>
+        <section className="section">
+          <motion.button 
       whileHover={{ scale: 1.17, duration:1}}
       whileTap={{ scale: 0.6,duration:0.4 }}
       class="button">Submit</motion.button>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>{" "}
+            <br></br>
+        </section>
+        </center>
+        <CopyToClipboard onCopy={onCopy} text={nameForm}><button>Hit twice to copy</button></CopyToClipboard>
+        <br></br>
+        <br></br>
+        Reset page to use again c(:
+        <br></br>
+        <br></br>
     </form>
-  );
-}
+        );
+      }
