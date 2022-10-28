@@ -1,19 +1,21 @@
 import "./App.css";
 import { useRef } from "react";
-import spaceRemover from "../spaceRemover";
 import nameFormat from "../nameFormat";
 import { motion } from "framer-motion";
-import background from "../giphy.gif"
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import React, {useState} from "react";
+import TextField from '@mui/material/TextField';
+
 let nameForm=""
+let nameF=""
+let submitted=false ;
 export const Apple = () => {
-  const [value, setValue] = React.useState('Cukni butona otnovo\nmamka mu');
+  const [clipboard,setClipboard]=useState("Nothing yet lol");
   const [copied, setCopied] = React.useState(false);
   const onCopy = React.useCallback(() => {
     setCopied(true);
   }, [])
-  const nameF = useRef();
+  nameF = useRef();
   const submit1 = (e) => {
     e.preventDefault();
     nameForm = nameFormat(nameF.current.value); 
@@ -34,12 +36,23 @@ export const Apple = () => {
             <br></br>
         </section>
         </center>
-        <CopyToClipboard onCopy={onCopy} text={nameForm}><button>Hit twice to copy</button></CopyToClipboard>
+        <br></br>
+        <br></br>
+        <CopyToClipboard onCopy={onCopy} text={nameForm}><button className=".button" onClick={()=>setClipboard(`Copied ${nameForm} 😋`)}>Click me and paste as name in VScode🤖</button></CopyToClipboard>
+        <br></br>
         <br></br>
         <br></br>
         Reset page to use again c(:
         <br></br>
         <br></br>
+              <TextField id="filled-basic" label={clipboard} variant="filled" color="success" focused rows="maxRows"/>
     </form>
-        );
-      }
+    // <center><div className="SideShit">
+
+    //     </div></center> */}
+    //     {/* );
+    //   }
+    //   export const SideShit=()=>{
+    //     return ( )
+    //   } */})
+  )}
