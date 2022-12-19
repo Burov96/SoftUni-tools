@@ -70,3 +70,6 @@ input[type=text]{
 * {
   box-sizing: border-box;
 }
+.Clock {
+  text-align: center;text-size-adjust:inherit;
+}
