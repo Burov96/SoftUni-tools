@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/SoftUni-tools/static/css/main.60639fa0.css",
-    "main.js": "/SoftUni-tools/static/js/main.3ecae2c2.js",
+    "main.css": "/SoftUni-tools/static/css/main.b5985b35.css",
+    "main.js": "/SoftUni-tools/static/js/main.7c2857ef.js",
     "static/media/giphy.gif": "/SoftUni-tools/static/media/giphy.aa35f686d9d32f1c9897.gif",
     "index.html": "/SoftUni-tools/index.html",
-    "main.60639fa0.css.map": "/SoftUni-tools/static/css/main.60639fa0.css.map",
-    "main.3ecae2c2.js.map": "/SoftUni-tools/static/js/main.3ecae2c2.js.map"
+    "main.b5985b35.css.map": "/SoftUni-tools/static/css/main.b5985b35.css.map",
+    "main.7c2857ef.js.map": "/SoftUni-tools/static/js/main.7c2857ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.60639fa0.css",
-    "static/js/main.3ecae2c2.js"
+    "static/css/main.b5985b35.css",
+    "static/js/main.7c2857ef.js"
   ]
 }
