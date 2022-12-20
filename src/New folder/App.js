@@ -10,11 +10,20 @@ let nameForm = "null yet";
 let nameF = "null yet";
 export const Clock = ()=>{
   currentTime()};
-const pruchka=()=>{
+export const Pruchka=()=>{
   return <motion.h1
-  initial={{x:-1000}}
-  animate={{x:[20,50,0,-70.40] }}>
-  🪄 asdsdasdasdasdAS ASDASDASD AS
+  initial={{x:100}}
+  animate={{
+    y:[1200,500,500,1200]
+  }}
+  // transition={{
+  //   delay: 0.5,
+  //   x: { duration: 1 },
+  //   default: { ease: "linear" }
+  // }}
+  // transition={{duration: 3}}
+  >
+  🪄 
   </motion.h1>
 }
 export const Apple = () => {
@@ -23,7 +32,7 @@ export const Apple = () => {
   const submit1 = (e) => {
     e.preventDefault();
     nameForm = nameFormat(nameF.current.value);
-    setClipboard(`🪄 ${nameForm} `);
+    setClipboard(`🪄 ${nameForm} `)
     // nameF.current.value = "";
   };
   
@@ -35,7 +44,7 @@ export const Apple = () => {
       <h4>Paste excercise name in the field.</h4>
       <center>
         <section className="section"
-    onSubmit={pruchka()}>
+    onSubmit={Pruchka()}>
         <CopyToClipboard text={nameForm}>
           <motion.button
             whileHover={{ scale: 1.17, duration: 1 }}
@@ -51,16 +60,21 @@ export const Apple = () => {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
+      <div className="textfield">
       <TextField
-        id="filled-basic"
+        id="outlined-read-only-input"
         label={clipboard}
         variant="filled"
         color="success"
         focused="true"
         multiline="false"
-        />
+        size="normal"
+        InputProps={{
+          readOnly: true,
+        }}
+        /></div>
+      <br></br>
+      <br></br>
     </form>
     // <center><div className="SideShit">
     
